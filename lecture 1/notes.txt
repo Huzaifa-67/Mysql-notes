@@ -1,0 +1,63 @@
+my sql is database
+collection of data
+data is a meaningful information
+DBMS=Database management system:all data is saved in single file
+RDBWS=Relational database management system:builds relation between
+
+Companies that provide serices through their software
+mysql
+sql server
+orcal
+MongoDB
+
+RDBWS= structure database(Columns and rows)
+
+
+ER model=Graphical representation of a RDBMS which provides hte symbol to understand the hierarchical of database
+Entity=object=Table which contains properties
+
+Entity represented through Rectangle
+Attribute represented through circle
+Connection represented through  horizontal line
+Relation represented through diamond shape
+week Entity represented through double Rectangle which is represented as strong Entity
+
+multivalued Attribute(At a time holds more than one value)
+ 
+derived Attribute(which is derive by an Attribute,depended on other Attribute)for eg age is a derived attribute for DOB
+
+
+mysql is structure query language
+
+depend on query command
+
+commands
+2 types of command in mysql 
+DDL=Data definition language
+,based on the structure of the database
+
+
+DML=Data manipulation language
+
+
+
+xammp 
+apache default port=80
+
+query language
+
+
+Create Database/Table DBName/Tablename
+Add column col-name Data type
+
+
+INSERT INTO work2(id,Name,Quantity,brand_name,price)VALUES
+(1,"shirt",8,"Cambridge",1500),
+(2,"shoes",8,"Addidas",4500),
+(3,"Iphone",8,"Apple",15000),
+(2,"Galaxy",8,"Samsung",4500)
+
+
+
+
+

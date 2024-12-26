@@ -1,0 +1,49 @@
+Constraints:
+can increase the efficiency of the data
+1 Primary Key
+2 Unique Key
+3 Foriegn Key
+
+Key attribute:
+can return the data uniquely
+
+Primary Key does not allow duplicate data.It makes the data unique.All the data is dependent on primary Key.It does not accept
+null value.primary key makes relation with the Foriegn key.It is table representative.
+
+
+
+
+Unique Key only makes the column unique.It accepts null value.
+
+Foriegn key:
+There can be more than one key in one table.It is the reference of anmother table primary key.
+
+Queries
+
+ALTER TABLE work2 MODIFY id int  PRIMARY KEY AUTO_INCREMENT  
+
+CREATE TABLE department (
+id int PRIMARY KEY AUTO_INCREMENT,
+    name varchar(30) UNIQUE KEY not null
+)
+
+
+
+CREATE TABLE employee (
+id int(11) PRIMARY KEY AUTO_INCREMENT,
+FIRST_Name varchar(50) not null,
+LAST_Name varchar(50) not null,
+Age INT not null,
+    gender char not null,
+Contact varchar (50) not null,
+Address varchar (50) not null,
+Salary int not null,
+Department varchar (50) not null,
+Date_of_joining date not null
+
+)
+
+
+INSERT INTO employees(FIRST_Name,LAST_Name,Age,gender,Contact,Address,Salary,Department,Date_of_joining)VALUES
+("Majid","Khan",22,"Male",03218234529,"Delhi Colony",50000,"Sales","2022-08-24"),
+

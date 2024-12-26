@@ -1,0 +1,21 @@
+-- Question 1
+-- SELECT COUNT(P_id) AS totalcount FROM products;
+-- Question 2
+-- SELECT Name, COUNT(*) AS total_product FROM products GROUP BY Name;
+-- Question 3
+-- SELECT COUNT(quantity) AS totalquantity FROM products
+-- Question 4
+/*SELECT COUNT(quantity) AS total_quantity,brands.Name brandsname FROM products INNER JOIN brands ON products.brand_id - brands.id GROUP BY brands.Name*/
+-- Question 5
+-- SELECT SUM(Price) AS total_amount FROM products
+-- Question 6
+-- SELECT Name, SUM(Price) AS total_amount FROM products GROUP BY Name
+-- Question 7
+/*SELECT SUM(products.Price) AS total_amount, brands.Name AS brandname FROM products INNER JOIN brands ON products.brand_id brands.id GROUP BY brands.Name;*/
+-- Question 8
+/*SELECT SUM(products.quantity * products.Price) AS totalamount, brands.Name AS brandsName FROM products INNER JOIN brands ON 
+products.brand_id = brands.id GROUP BY brands.Name;*/
+-- Question 9
+/*SELECT MAX(products.Price)  Maximumprice, products.Name  Productname FROM products group BY products.Name ORDER BY maximumprice DESC LIMIT 1*/
+-- Question 10
+SELECT MIN(products.Price)  Minimumprice, products.Name  Productname FROM products group BY products.Name ORDER BY Minimumprice  LIMIT 1

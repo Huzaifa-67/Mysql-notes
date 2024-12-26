@@ -1,0 +1,26 @@
+Triggers are 
+autofire/queries
+table relation = when order comes,a trigger fire to generate invoice in other table.
+
+they are used for data manipulation
+but used before and after insert,delete, and update.
+
+
+DELIMITER //
+CREATE TRIGGER brnd_backup after INSERT on brands
+for EACH ROW
+BEGIN
+INSERT INTO brnd_backup (description)
+VALUES (concat('insert a data into brands table',now()));
+END//
+
+
+DELIMITER //
+CREATE TRIGGER bk_pro after delete on products
+for each ROW
+BEGIN
+DECLARE pname varchar(30);
+set pname = old.Name;
+INSERT into brnd_backup (description)
+VALUES (concat('Data is deleted from table name is ',pname,' ',now()));
+END//
